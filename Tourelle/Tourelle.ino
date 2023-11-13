@@ -42,21 +42,21 @@ void loop() {
   srituhobby.getEvent(&a, &g, &temp);
 
   // Récupération des valeurs d'accélération en X et Y
-  int value1 = a.acceleration.x;
-  int value2 = a.acceleration.y;
+  int valuex = a.acceleration.x;
+  int valuey = a.acceleration.y;
 
   // Mappage des valeurs d'accélération aux angles des servomoteurs
-  value1 = map(value1, -10, 10, 180, 0);
-  value2 = map(value2, -10, 10, 180, 0);
+  valuex = map(valuex, -10, 10, 180, 0);
+  valuey = map(valuey, -10, 10, 180, 0);
 
   // Déplacement des servomoteurs en fonction des valeurs d'accélération
-  servobas.write(value2);
-  servohaut.write(value1);
+  servobas.write(valuey);
+  servohaut.write(valuex);
 
   // Affichage des valeurs dans le moniteur série
-  Serial.print(value1);
+  Serial.print(valuex);
   Serial.print("  ");
-  Serial.println(value2);
+  Serial.println(valuey);
 
   // Pause pour éviter une lecture trop rapide
   delay(10);
