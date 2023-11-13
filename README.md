@@ -66,7 +66,7 @@ Le but ici était de se familiariser avec l'utilisation de l'accéléromètre et
 Rappelons que le MPU6050 est orienté de cette manière ; il faudra donc incliner le poignet vers l'avant pour monter le bras et de gauche à droite pour tourner.
 
 ![i](https://proteshea.com/wp-content/uploads/2019/07/MPU6050-Axes-1024x683.jpg)
-![i](files/Group 15.png)
+![i](./files/poignet.png)
 On peut facilement imaginer de faire un gant sur lequel on fixerait l'accéléromètre pour avoir une meilleure précision.
 
 Ici en fonction de la rotation en X et en Y du capteur nos deux servomoteurs vont s'ajuster pour pointer vers la direction de la main. Dans une version future, il serait bien que l'axe Z soit utilisé pour rendre le mouvement plus simple. 
