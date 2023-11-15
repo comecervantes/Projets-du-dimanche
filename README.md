@@ -71,4 +71,11 @@ On peut facilement imaginer de faire un gant sur lequel on fixerait l'accéléro
 
 Ici en fonction de la rotation en X et en Y du capteur nos deux servomoteurs vont s'ajuster pour pointer vers la direction de la main. Dans une version future, il serait bien que l'axe Z soit utilisé pour rendre le mouvement plus simple. 
 
+Le résultat final en vidéo :
+[Vidéo](files%2F1.mp4)
+
 A noter que lors du développement du capteur, j'ai remarqué dans la datasheet du MPU6050 que le composant possède un thermomètre intégré dont je questionne l'utilité. 
+
+---
+
+
