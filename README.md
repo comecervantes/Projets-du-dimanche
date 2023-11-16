@@ -18,6 +18,7 @@ Bienvenue sur mon espace dédié à l'ingénierie créative ! Je suis passionné
 
 ## 📖 Table des matières
 - [Projet 1 - Tourelle contrôlée par un accéléromètre](#projet-1---tourelle-contrôlée-par-un-accéléromètre)
+- [Projet 2 - Système de contrôle de la température](#projet-2---système-de-contrôle-de-la-température)
 
 ## 🤝 Contributions
 Les contributions sont les bienvenues! Si vous souhaitez améliorer ce projet, n'hésitez pas à créer une pull request.
@@ -69,13 +70,48 @@ Rappelons que le MPU6050 est orienté de cette manière ; il faudra donc incline
 ![i](./files/poignet.png)
 On peut facilement imaginer de faire un gant sur lequel on fixerait l'accéléromètre pour avoir une meilleure précision.
 
-Ici en fonction de la rotation en X et en Y du capteur nos deux servomoteurs vont s'ajuster pour pointer vers la direction de la main. Dans une version future, il serait bien que l'axe Z soit utilisé pour rendre le mouvement plus simple. 
-
-Le résultat final en vidéo :
-[Vidéo](files%2F1.mp4)
+Ici en fonction de la rotation en X et en Y du capteur nos deux servomoteurs vont s'ajuster pour pointer vers la direction de la main. Dans une version future, il serait bien que l'axe Z soit utilisé pour rendre le mouvement plus simple.
 
 A noter que lors du développement du capteur, j'ai remarqué dans la datasheet du MPU6050 que le composant possède un thermomètre intégré dont je questionne l'utilité. 
+On pourrais utiliser cela pour par exemple détecter lorsque la commande n'est pas dans la main et mettre le système en veille pour économiser de l'énergie.
 
 ---
+# Projet 2 - Système de contrôle de la température
+
+Ce projet consiste en un système de contrôle de la température. Il est composé d'un capteur de température, d'une LED IR et d'un écran LCD. Le système est contrôlé par un Arduino Nano.
+
+Le but ici était de se familiariser avec l'utilisation du capteur de température et de l'intégrer dans un projet, pour rendre cela plus visuel j'ai décidé de faire un système de contrôle de la température.
+
+### Matériel nécessaire
+- Arduino
+- Capteur de température LM35
+- Ecran LCD
+- Potentiomètre 10kΩ
+- LED IR
+- Fils de connexion
+- Breadboard
+
+### Dépendances
+- [Adafruit MPU6050 Library](https://github.com/adafruit/Adafruit_MPU6050)
+- [Adafruit Sensor Library](https://github.com/adafruit/Adafruit_Sensor)
+
+### Configuration matérielle
+1. Connectez le capteur de température LM35 aux broches appropriées sur votre Arduino.
+2. Connectez l'écran LCD aux broches appropriées sur votre Arduino.
+3. Connectez la LED IR aux broches appropriées sur votre Arduino.
 
 
+
+**Broches :**
+
+
+### Installation du code
+1. Clonez ce [dépôt](Tourelle) sur votre ordinateur.
+2. Ouvrez le fichier Arduino (.ino) dans l'IDE Arduino.
+3. Téléversez le code sur votre carte Arduino.
+
+### Utilisation
+1. Alimentez votre Arduino.
+
+
+---
