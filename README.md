@@ -18,8 +18,8 @@ Bienvenue sur mon espace dédié à l'ingénierie créative ! Je suis passionné
 
 ## 📖 Table des matières
 - [Projet 1 - Tourelle contrôlée par un accéléromètre](#projet-1---tourelle-contrôlée-par-un-accéléromètre)
-- [Projet 2 - Système de contrôle de la température](#projet-2---système-de-contrôle-de-la-température)
-
+- [Projet 2 - Etagère en skates](#projet-2---etagère-en-skates)
+- 
 ## 🤝 Contributions
 Les contributions sont les bienvenues! Si vous souhaitez améliorer ce projet, n'hésitez pas à créer une pull request.
 Si vous avez des questions ou des remarques c'est avec plaisir que je vous répondrai.
@@ -72,46 +72,31 @@ On peut facilement imaginer de faire un gant sur lequel on fixerait l'accéléro
 
 Ici en fonction de la rotation en X et en Y du capteur nos deux servomoteurs vont s'ajuster pour pointer vers la direction de la main. Dans une version future, il serait bien que l'axe Z soit utilisé pour rendre le mouvement plus simple.
 
-A noter que lors du développement du capteur, j'ai remarqué dans la datasheet du MPU6050 que le composant possède un thermomètre intégré dont je questionne l'utilité. 
-On pourrais utiliser cela pour par exemple détecter lorsque la commande n'est pas dans la main et mettre le système en veille pour économiser de l'énergie.
+À noter que lors du développement du capteur, j'ai remarqué dans la datasheet du MPU6050 que le composant possède un thermomètre intégré dont je questionne l'utilité. 
+On pourrait utiliser cela pour par exemple détecter lorsque la commande n'est pas dans la main et mettre le système en veille pour économiser de l'énergie.
 
 ---
-# Projet 2 - Système de contrôle de la température
 
-Ce projet consiste en un système de contrôle de la température. Il est composé d'un capteur de température, d'une LED IR et d'un écran LCD. Le système est contrôlé par un Arduino Nano.
+# Projet 2 - Etagère en skates
 
-Le but ici était de se familiariser avec l'utilisation du capteur de température et de l'intégrer dans un projet, pour rendre cela plus visuel j'ai décidé de faire un système de contrôle de la température.
+À la recherche d'un nouveau meuble ? Cette semaine, découvrez une étagère conçue à partir de planches de skate recyclées. Alliant économie, ergonomie, design, et respect de l'environnement, cette étagère se présente comme l'option parfaite pour votre espace.
 
-### Matériel nécessaire
-- Arduino
-- Capteur de température LM35
-- Ecran LCD
-- Potentiomètre 10kΩ
-- LED IR
-- Fils de connexion
-- Breadboard
+Je vous guide aujourd'hui à travers la création de ce meuble unique. L'objectif ici est de vous familiariser avec l'utilisation d'outils d'atelier tels que perceuses et ponceuses. N'hésitez donc pas à vous rendre rapidement dans le fablab le plus proche pour donner vie à votre création.
 
-### Dépendances
-- [Adafruit MPU6050 Library](https://github.com/adafruit/Adafruit_MPU6050)
-- [Adafruit Sensor Library](https://github.com/adafruit/Adafruit_Sensor)
+## Matériel nécessaire
+- 4 planches de skate
+- 4 barres de fer avec pas de vis
+- 24 écrous
 
-### Configuration matérielle
-1. Connectez le capteur de température LM35 aux broches appropriées sur votre Arduino.
-2. Connectez l'écran LCD aux broches appropriées sur votre Arduino.
-3. Connectez la LED IR aux broches appropriées sur votre Arduino.
+## Outils nécessaires
+- Perceuse
+- Ponceuse
+- Scie 
+- Mètre
+- Crayon
 
+Commencer par nettoyer vos planches récupéré dans le skatepark du coin. Ensuite, il faut les poncer pour enlever les éventuels défauts et les rendre plus lisses.
 
+Vous optiendrez ensuite assez simplement après quelques trous et un peu de bricolage une étagère originale et unique.
 
-**Broches :**
-
-
-### Installation du code
-1. Clonez ce [dépôt](Tourelle) sur votre ordinateur.
-2. Ouvrez le fichier Arduino (.ino) dans l'IDE Arduino.
-3. Téléversez le code sur votre carte Arduino.
-
-### Utilisation
-1. Alimentez votre Arduino.
-
-
----
+![i](./files/etagere.png)
