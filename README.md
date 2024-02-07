@@ -19,7 +19,7 @@ Bienvenue sur mon espace dédié à l'ingénierie créative ! Je suis passionné
 ## 📖 Table des matières
 - [Projet 1 - Tourelle contrôlée par un accéléromètre](#projet-1---tourelle-contrôlée-par-un-accéléromètre)
 - [Projet 2 - Etagère en skates](#projet-2---etagère-en-skates)
-- 
+
 ## 🤝 Contributions
 Les contributions sont les bienvenues! Si vous souhaitez améliorer ce projet, n'hésitez pas à créer une pull request.
 Si vous avez des questions ou des remarques c'est avec plaisir que je vous répondrai.
@@ -55,10 +55,6 @@ Le but ici était de se familiariser avec l'utilisation de l'accéléromètre et
     MPU6050 SCL = A5
 
 
-### Installation du code
-1. Clonez ce [dépôt](Tourelle) sur votre ordinateur.
-2. Ouvrez le fichier Arduino (.ino) dans l'IDE Arduino.
-3. Téléversez le code sur votre carte Arduino.
 
 ### Utilisation
 1. Alimentez votre Arduino.
@@ -100,3 +96,113 @@ Commencer par nettoyer vos planches récupéré dans le skatepark du coin. Ensui
 Vous optiendrez ensuite assez simplement après quelques trous et un peu de bricolage une étagère originale et unique.
 
 ![i](./files/etagere.png)
+
+---
+
+# Projet 3 - Detection d'un champ magnétique avec un capteur Hall
+
+Ce projet consiste en la détection d'un champ magnétique avec un capteur Hall. L'objectif est de pouvoir détecter la présence d'un aimant à proximité du capteur.
+
+## Matériel nécessaire
+- Arduino (compatible avec le code)
+- Capteur Hall
+- Aimant
+- led
+- registre à décalage 74HC595
+
+## Dépendances
+- Aucune
+
+Notre capteur à effet hall est un capteur qui réagit à un champ magnétique. Il est donc possible de détecter la présence d'un aimant à proximité du capteur.
+Nous allons avec la valeur que nous récupérons allumer une série de LED en fonction de cette valeur 
+
+
+---
+
+# Projet 4 - Detecteur d'intensité sonore
+
+Ce projet consiste en la détection d'une intensité sonore avec un microphone. L'objectif est de pouvoir détecter le niveau sonore ambiant.
+
+## Matériel nécessaire
+- Arduino (compatible avec le code)
+- Microphone
+- led
+- registre à décalage 74HC595
+
+De la même manière que le projet dernier le but est de récupérer une valeur de l'intensité sonore et d'allumer une série de LED en fonction de cette valeur.
+Dans le code cependant cette inténsité en dBa nécessite une série de calcule pour être convertie en une valeur exploitable. Je viendrais par la suite sur le détail de ce fonctionnement. 
+
+---
+
+# Projet ? - Allumage chauffage à distance avec LED IR et ESP
+
+Ce projet consiste en un système d'allumage à distance pour un chauffage à gaz. L'objectif est de pouvoir allumer le chauffage à distance, avant d'arriver chez soi, pour que la maison soit chaude à l'arrivée.
+
+## Matériel nécessaire
+- Esp (compatible avec le code)
+- LED IR
+- Fils de connexion
+- Breadboard
+
+## Dépendances
+- IRremoteESP8266
+- ESP8266WiFi
+
+## Configuration matérielle
+1. Connectez la LED IR aux broches appropriées sur votre ESP.
+2. Assurez-vous que toutes les dépendances sont installées.
+3. Connectez votre ESP à votre réseau WiFi.
+
+   **Broches :**
+
+   
+    LED IR = D2
+
+## Installation du code
+1. Clonez ce [dépôt](Allumage-chauffage) sur votre ordinateur.
+2. Ouvrez le fichier Arduino (.ino) dans l'IDE Arduino.
+3. Téléversez le code sur votre carte ESP.
+4. Modifiez le code avec votre SSID et votre mot de passe WiFi.
+5. Modifiez le code avec l'adresse IP de votre ESP.
+7. Modifiez le code avec le code de votre télécommande.
+
+Pour commencer mon projet j'ai utilisé une LED IR et un ESP8266. J'ai ensuite récupéré le code de ma télécommande pour pouvoir l'envoyer à distance.
+Ainsi avec un petit montage et un peu de code je récupère le code de ma télécommande.
+
+Le code pour récuperer le code est le suivant :
+
+``` c++
+#include <IRremote.h> 
+
+#define PIN_RECEPTION 3
+
+IRrecv receiver(PIN_RECEPTION); 
+decode_results results; 
+
+void setup() {
+   Serial.begin(9600); 
+   receiver.enableIRIn(); 
+   receiver.blink13(true); 
+}
+void loop() {
+  if (receiver.decode(&results)) { 
+    Serial.println(results.value, HEX); 
+    receiver.resume(); 
+  }
+}
+```
+
+Ainsi je récupère ces valeurs : 
+
+![i](./files/code.png)
+
+Voici l'image du montage :
+
+![i](./files/montage.jpg)
+
+Puis j'ai fais un code pour cette fois-ci ne pas récupérer le code, mais l'envoyer :
+
+Le code ON de ma télécommande -> 67534B64 en HEX -> 1733512036
+Le code OFF de ma télécommande -> 9CC72A2E en HEX -> 2630298158
+
+``` c++
