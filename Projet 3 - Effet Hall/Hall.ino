@@ -6,6 +6,10 @@
 #define PIN_RCLK 3
 #define PIN_SRCLK 4
 
+#define MIN 400
+#define MAX 1010
+
+
 // Initialisation des registres à décalage
 boolean registres[nbPinsRegistre] = {0, 0, 0};
 
@@ -57,7 +61,7 @@ void loop()
   Serial.print(",");
 
   // Mapping de la valeur du capteur au nombre de LEDs à allumer
-  nbLeds = map(analogRead(PIN_CAPTEUR), 0, 1023, 0, 8);
+  nbLeds = map(analogRead(PIN_CAPTEUR), MIN, MAX, 0, 8);
   Serial.println(nbLeds); // Affichage du nombre de LEDs à allumer
 
   // Réinitialisation des registres à décalage
