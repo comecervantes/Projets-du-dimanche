@@ -27,6 +27,9 @@ ressources, des tutoriels et des retours d'expérience qui pourront vous être u
 
 - [Projet 1 - Tourelle contrôlée par un accéléromètre](#projet-1---tourelle-contrôlée-par-un-accéléromètre)
 - [Projet 2 - Etagère en skates](#projet-2---etagère-en-skates)
+- [Projet 3 - Detection d'un champ magnétique avec un capteur Hall](#projet-3---detection-dun-champ-magnétique-avec-un-capteur-hall)
+- [Projet 4 - Detecteur d'intensité sonore](#projet-4---detecteur-dintensité-sonore)
+- [Projet ? - Allumage chauffage à distance avec LED IR et ESP](#projet---allumage-chauffage-à-distance-avec-led-ir-et-esp)
 
 ## 🤝 Contributions
 
@@ -40,37 +43,6 @@ accéléromètre MPU6050. La tourelle s'ajuste verticalement et horizontalement 
 
 Le but ici était de se familiariser avec l'utilisation de l'accéléromètre et de l'intégrer dans un projet, pour rendre
 cela plus visuel j'ai décidé de faire une tourelle avec deux servomoteurs.
-
-### Matériel nécessaire
-
-- Arduino (compatible avec le code)
-- Accéléromètre MPU6050
-- Deux servomoteurs
-- Fils de connexion
-- Breadboard
-
-### Dépendances
-
-- [Adafruit MPU6050 Library](https://github.com/adafruit/Adafruit_MPU6050)
-- [Adafruit Sensor Library](https://github.com/adafruit/Adafruit_Sensor)
-
-### Configuration matérielle
-
-1. Connectez l'accéléromètre MPU6050 aux broches appropriées sur votre Arduino.
-2. Connectez les servomoteurs aux broches appropriées sur votre Arduino.
-3. Assurez-vous que toutes les dépendances sont installées.
-
-**Broches :**
-
-    servobas = D3
-    servohaut = D9
-    MPU6050 SDA = A4
-    MPU6050 SCL = A5
-
-### Utilisation
-
-1. Alimentez votre Arduino.
-2. La tourelle s'ajustera automatiquement en fonction de la position de votre main détectée par l'accéléromètre.
 
 Rappelons que le MPU6050 est orienté de cette manière ; il faudra donc incliner le poignet vers l'avant pour monter le
 bras et de gauche à droite pour tourner.
@@ -100,24 +72,10 @@ Je vous guide aujourd'hui à travers la création de ce meuble unique. L'objecti
 utilisation d'outils d'atelier tels que perceuses et ponceuses. N'hésitez donc pas à vous rendre rapidement dans le
 fablab le plus proche pour donner vie à votre création.
 
-## Matériel nécessaire
-
-- 4 planches de skate
-- 4 barres de fer avec pas de vis
-- 24 écrous
-
-## Outils nécessaires
-
-- Perceuse
-- Ponceuse
-- Scie
-- Mètre
-- Crayon
-
 Commencer par nettoyer vos planches récupéré dans le skatepark du coin. Ensuite, il faut les poncer pour enlever les
 éventuels défauts et les rendre plus lisses.
 
-Vous optiendrez ensuite assez simplement après quelques trous et un peu de bricolage une étagère originale et unique.
+Vous obtiendrez ensuite assez simplement après quelques trous et un peu de bricolage une étagère originale et unique.
 
 ![i](./files/etagere.png)
 
@@ -127,14 +85,6 @@ Vous optiendrez ensuite assez simplement après quelques trous et un peu de bric
 
 Ce projet consiste en la détection d'un champ magnétique avec un capteur Hall. L'objectif est de pouvoir détecter la
 présence d'un aimant à proximité du capteur.
-
-## Matériel nécessaire
-
-- Arduino (compatible avec le code)
-- Capteur Hall
-- Aimant
-- led
-- registre à décalage 74HC595
 
 Notre capteur à effet hall est un capteur qui réagit à un champ magnétique. Il est donc possible de détecter la présence
 d'un aimant à proximité du capteur.
@@ -147,6 +97,10 @@ présence d'un aimant à proximité, avec plusieurs capteurs. J'ai réussi à r�
 traiter comme je le veux je voulais dans ce projet juste imager ce champ mais j'utiliserais surement ce capteur dans un
 futur projet.
 
+![i](./files/hall.png)
+
+Je vais ensuite rajouter une fonction pour transcrire cette valeur en une valeur d'intensité et de champ electromagnétique. 
+
 ---
 
 # Projet 4 - Detecteur d'intensité sonore
@@ -154,17 +108,12 @@ futur projet.
 Ce projet consiste en la détection d'une intensité sonore avec un microphone. L'objectif est de pouvoir détecter le
 niveau sonore ambiant.
 
-## Matériel nécessaire
-
-- Arduino (compatible avec le code)
-- Microphone
-- led
-- registre à décalage 74HC595
-
 De la même manière que le projet dernier le but est de récupérer une valeur de l'intensité sonore et d'allumer une série
 de LED en fonction de cette valeur.
 Dans le code cependant cette inténsité en dBa nécessite une série de calcule pour être convertie en une valeur
 exploitable. Je viendrais par la suite sur le détail de ce fonctionnement.
+
+![i](./files/micro.png)
 
 ---
 
@@ -172,37 +121,6 @@ exploitable. Je viendrais par la suite sur le détail de ce fonctionnement.
 
 Ce projet consiste en un système d'allumage à distance pour un chauffage à gaz. L'objectif est de pouvoir allumer le
 chauffage à distance, avant d'arriver chez soi, pour que la maison soit chaude à l'arrivée.
-
-## Matériel nécessaire
-
-- Esp (compatible avec le code)
-- LED IR
-- Fils de connexion
-- Breadboard
-
-## Dépendances
-
-- IRremoteESP8266
-- ESP8266WiFi
-
-## Configuration matérielle
-
-1. Connectez la LED IR aux broches appropriées sur votre ESP.
-2. Assurez-vous que toutes les dépendances sont installées.
-3. Connectez votre ESP à votre réseau WiFi.
-
-   **Broches :**
-
-   LED IR = D2
-
-## Installation du code
-
-1. Clonez ce [dépôt](Allumage-chauffage) sur votre ordinateur.
-2. Ouvrez le fichier Arduino (.ino) dans l'IDE Arduino.
-3. Téléversez le code sur votre carte ESP.
-4. Modifiez le code avec votre SSID et votre mot de passe WiFi.
-5. Modifiez le code avec l'adresse IP de votre ESP.
-7. Modifiez le code avec le code de votre télécommande.
 
 Pour commencer mon projet j'ai utilisé une LED IR et un ESP8266. J'ai ensuite récupéré le code de ma télécommande pour
 pouvoir l'envoyer à distance.
