@@ -7,12 +7,12 @@
 ## À propos de ce projet
 
 Bienvenue sur mon espace dédié à l'ingénierie créative ! Je suis passionné par l'électronique, la mécanique et tout ce
-qui touche au vaste domaine de l'ingénierie. Sur cette page Git, je partage mes petites aventures hebdomadaires à
+qui touche au vaste domaine de l'ingénierie. Sur ce dépôt GitHub, je partage mes petites aventures hebdomadaires à
 travers des projets divers et variés, tous liés à l'univers de la conception et de la réalisation.
 
 ## Ce que vous trouverez ici
 
-🔍 **Exploration hebdomadaire :** Chaque semaine, je me lance dans un nouveau projet, explorant les frontières de
+🔍 **Exploration hebdomadaire :** Chaque semaine, je me lance dans un nouveau projet, explorant les limites de
 l'électronique, de la mécanique et d'autres domaines connexes. Vous pourrez suivre l'évolution de mes idées, de la
 conception à la réalisation.
 
@@ -25,16 +25,32 @@ ressources, des tutoriels et des retours d'expérience qui pourront vous être u
 
 ## 📖 Table des matières
 
-- [Projet 1 - Tourelle contrôlée par un accéléromètre](#projet-1---tourelle-contrôlée-par-un-accéléromètre)
-- [Projet 2 - Etagère en skates](#projet-2---etagère-en-skates)
-- [Projet 3 - Detection d'un champ magnétique avec un capteur Hall](#projet-3---detection-dun-champ-magnétique-avec-un-capteur-hall)
-- [Projet 4 - Detecteur d'intensité sonore](#projet-4---detecteur-dintensité-sonore)
-- [Projet ? - Allumage chauffage à distance avec LED IR et ESP](#projet---allumage-chauffage-à-distance-avec-led-ir-et-esp)
+- [Projets du Dimanche](#-projets-du-dimanche)
+    - [Auteur](#-auteur)
+    - [À propos de ce projet](#à-propos-de-ce-projet)
+    - [Ce que vous trouverez ici](#ce-que-vous-trouverez-ici)
+    - [Table des matières](#-table-des-matières)
+
+- [Petits Projets](#petits-projets)
+    - [Projet 1 - Tourelle contrôlée par un accéléromètre](#projet-1---tourelle-contrôlée-par-un-accéléromètre)
+    - [Projet 2 - Etagère en skates](#projet-2---etagère-en-skates)
+    - [Projet 3 - Detection d'un champ magnétique avec un capteur Hall](#projet-3---detection-dun-champ-magnétique-avec-un-capteur-hall)
+    - [Projet 4 - Detecteur d'intensité sonore](#projet-4---detecteur-dintensité-sonore)
+    - [Projet ? - Allumage chauffage à distance avec LED IR et ESP](#projet---allumage-chauffage-à-distance-avec-led-ir-et-esp)
+- [Gros projets](#gros-projets)
+    - [Gros projets 1 - Drone avec châssis imprimé en 3D](#gros-projets-1---drone-avec-châssis-imprimé-en-3d)
+    - [Gros projets 2 - Création d'une maille textile imprimé en 3D](#gros-projets-2---création-dune-maille-textile-imprimé-en-3d)
 
 ## 🤝 Contributions
 
 Les contributions sont les bienvenues! Si vous souhaitez améliorer ce projet, n'hésitez pas à créer une pull request.
 Si vous avez des questions ou des remarques c'est avec plaisir que je vous répondrai.
+
+---
+
+# Petits Projets
+
+---
 
 # Projet 1 - Tourelle contrôlée par un accéléromètre
 
@@ -99,7 +115,8 @@ futur projet.
 
 ![i](./files/hall.png)
 
-Je vais ensuite rajouter une fonction pour transcrire cette valeur en une valeur d'intensité et de champ electromagnétique. 
+Je vais ensuite rajouter une fonction pour transcrire cette valeur en une valeur d'intensité et de champ
+electromagnétique.
 
 ---
 
@@ -162,4 +179,68 @@ Puis j'ai fais un code pour cette fois-ci ne pas récupérer le code, mais l'env
 Le code ON de ma télécommande -> 67534B64 en HEX -> 1733512036
 Le code OFF de ma télécommande -> 9CC72A2E en HEX -> 2630298158
 
-``` c++
+
+---
+
+# Gros projets 1 - Drone avec châssis imprimé en 3D
+
+![Illustration](https://fablab-fabriqueinnovation.fab-manager.com/uploads/project_image/12176/project_image.jpg)
+
+L'objectif ici est de concevoir un drone FPV à partir d'un châssis et d'une pile 18650, un projet initialement conçu par
+Dave\_C\_FPV il y a quelques années. Notre but est de le moderniser tout en conservant le même concept de base. Avec les
+composants d'aujourd'hui nous espérons améliorer les capacités du drone pour avoir un drone peu cher et simple à
+construire.
+
+## Étapes
+
+### Étape 1 : L'impression du châssis
+
+Premièrement j'ai imprimé le châssis disponible sur thingiverse de Dave\_C\_FPV et l'ai imprimé avec la _Prusa Mini_
+comme tel, cela me permettra d'assembler la première version du drone.
+
+Cependant il est clair que ce châssis sera amené à changer car trop peu adapter à mon utilisation.&nbsp.
+
+### Étape 2 : Achat / Choix des composants
+
+Cette étape est cruciale je vais devoir choisir les différents composants pour le drone, je vais essayer de faire au
+moins cher et au plus efficace, en effet le but de ce projet est avant tout de rendre **très** accessible le fpv.
+
+## Fichiers CAD
+
+![Bottom.stl](https://fablab-fabriqueinnovation.fab-manager.com/uploads/project_cao/12180/Bottom.stl)
+
+![Top.stl](https://fablab-fabriqueinnovation.fab-manager.com/uploads/project_cao/12181/Top.stl)
+
+---
+
+# Gros projets 2 - Création d'une maille textile imprimé en 3D
+
+![Illustration](https://fablab-fabriqueinnovation.fab-manager.com/uploads/project_image/12171/project_image.jpg)
+
+Dans ce projet, je voulais créer un textile imprimé en 3D. Pour cela, je suis partie d'une base sur Thingiverse d'une
+maille. La limite de cette maille est sa résistance. Pour résoudre ce problème nous avons rajouté un mesh en tissu pour
+consolider cette structure. Ainsi nous avons pu faire un sac et dans le future nous réfléchissons à faire des habits en
+retravaillant le concept.
+
+## Étapes
+
+### Étape 1 : Les tests
+
+Pour commencer, nous avons dû tester différentes possibilités et réglages d'impression sur de petites surfaces. Nous
+avons ainsi testé en miniature la fusion du maillage textile sur la maille. Ce processus fonctionne très bien avec un
+fer à repasser et permet d'ajouter de la solidité aux maillons, évitant ainsi de les scinder à vide.
+
+![Image 1](https://fablab-fabriqueinnovation.fab-manager.com/uploads/project_step_image/12172/project_step_image.jpg)
+
+### Étape 2 : Impression en grand
+
+Maintenant que la technique fonctionne, j'ai imprimé le fichier "maille.stl" à l'échelle 97.47. Pour la suite du projet,
+nous avions besoin d'au moins 3 panneaux. À noter qu'après les tests, les imprimantes les plus performantes pour cette
+maille sont la Prusa (Mini et MK4) ainsi que la Bambou, bien entendu.
+
+![Image 1](https://fablab-fabriqueinnovation.fab-manager.com/uploads/project_step_image/12173/project_step_image.jpg)
+
+## Fichiers CAD
+
+![mailleouverte.stl](https://fablab-fabriqueinnovation.fab-manager.com/uploads/project_cao/12179/mailleouverte.stl)
+
