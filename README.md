@@ -186,30 +186,41 @@ Le code OFF de ma télécommande -> 9CC72A2E en HEX -> 2630298158
 
 ![Illustration](https://fablab-fabriqueinnovation.fab-manager.com/uploads/project_image/12176/project_image.jpg)
 
-L'objectif ici est de concevoir un drone FPV à partir d'un châssis et d'une pile 18650, un projet initialement conçu par
-Dave\_C\_FPV il y a quelques années. Notre but est de le moderniser tout en conservant le même concept de base. Avec les
-composants d'aujourd'hui nous espérons améliorer les capacités du drone pour avoir un drone peu cher et simple à
-construire.
+L'objectif ici est de concevoir un drone FPV à partir d'un châssis et d'une pile 18650, un projet initialement conçu par Dave\_C\_FPV il y a quelques années. Notre but est de le moderniser tout en conservant le même concept de base. Avec les composants d'aujourd'hui nous espérons améliorer les capacités du drone pour avoir un drone peu cher et simple à construire.&nbsp;
+
+
 
 ## Étapes
 
 ### Étape 1 : L'impression du châssis
 
-Premièrement j'ai imprimé le châssis disponible sur thingiverse de Dave\_C\_FPV et l'ai imprimé avec la _Prusa Mini_
-comme tel, cela me permettra d'assembler la première version du drone.
+Premièrement j'ai imprimé le châssis disponible sur thingiverse de Dave\_C\_FPV et l'ai imprimé avec la _Prusa Mini_ comme tel, cela me permettra d'assembler la première version du drone.&nbsp;
 
-Cependant il est clair que ce châssis sera amené à changer car trop peu adapter à mon utilisation.&nbsp.
+Cependant il est clair que ce châssis sera amené à changer car trop peu adapter à mon utilisation.&nbsp;
+
+
 
 ### Étape 2 : Achat / Choix des composants
 
-Cette étape est cruciale je vais devoir choisir les différents composants pour le drone, je vais essayer de faire au
-moins cher et au plus efficace, en effet le but de ce projet est avant tout de rendre **très** accessible le fpv.
+Cette étape est cruciale je vais devoir choisir les différents composants pour le drone, je vais essayer de faire au moins cher et au plus efficace, en effet le but de ce projet est avant tout de rendre **très** accessible le fpv.&nbsp;
 
-## Fichiers CAD
+Je suis donc parti sur cette base :&nbsp;
 
-![Bottom.stl](https://fablab-fabriqueinnovation.fab-manager.com/uploads/project_cao/12180/Bottom.stl)
+-Moteur ([https://www.banggood.com/fr/1PC-Happymodel-EX0802-0802-14000KV-1-2S-or-19000KV-25000KV-1S-Brushless-Motor-for-Mobula6-Mobula6-HD-Whoop-RC-Drone-FPV-Racing-p-1720224.html?cur\_warehouse=CN&ID=6291970532694](https://www.banggood.com/fr/1PC-Happymodel-EX0802-0802-14000KV-1-2S-or-19000KV-25000KV-1S-Brushless-Motor-for-Mobula6-Mobula6-HD-Whoop-RC-Drone-FPV-Racing-p-1720224.html?cur_warehouse=CN&ID=6291970532694))
 
-![Top.stl](https://fablab-fabriqueinnovation.fab-manager.com/uploads/project_cao/12181/Top.stl)
+-Caméra + VTX ([https://www.banggood.com/fr/Eachine-TX06-700TVL-FOV-120-Degree-5\_8Ghz-48CH-25mW-Smart-Audio-Mini-FPV-Camera-Support-Pitmode-AIO-Transmitter-For-RC-Drone-Tiny-Whoop-p-1413572.html?cur\_warehouse=CN&ID=440706323412](https://www.banggood.com/fr/Eachine-TX06-700TVL-FOV-120-Degree-5_8Ghz-48CH-25mW-Smart-Audio-Mini-FPV-Camera-Support-Pitmode-AIO-Transmitter-For-RC-Drone-Tiny-Whoop-p-1413572.html?cur_warehouse=CN&ID=440706323412))
+
+- Flight Controller ([https://betafpv.com/collections/brushless-flight-controller/products/f4-1s-5a-aio-brushless-flight-controller-elrs-2-4g](https://betafpv.com/collections/brushless-flight-controller/products/f4-1s-5a-aio-brushless-flight-controller-elrs-2-4g))
+
+Tout ces composants ne seront pas chez moi avant mars 2024 je vais donc passer quelque temps sur simulateur avant ;)
+
+
+
+### Étape 3 : Passer les formations et du temps sur simulateur
+
+Pour bien maîtriser le pilotage d'un drone, il est essentiel d'être un bon pilote. C'est pourquoi je recommande aux débutants de commencer par s'entraîner sur un simulateur. Pour cela, vous aurez besoin d'une manette de jeu. Personnellement, j'utilise la TX12 de Radiomaster en ELRS, qui offre une excellente performance et une grande polyvalence.
+
+Quant au simulateur, j'ai une préférence pour TrypFPV, non seulement parce que c'est un jeu français, mais aussi pour sa qualité. De plus, voler un drone en France nécessite une formation, bien que ce soit obligatoire uniquement pour les drones de plus de 800g (ce qui n'est pas le cas ici, mais il est toujours utile de la suivre). Cette formation couvre le cadre légal du pilotage de drone, ce qui est essentiel à connaître. Vous pouvez trouver cette formation gratuite et rapide sur le site d'AlphaTango.
 
 ---
 
