@@ -214,8 +214,6 @@ Je suis donc parti sur cette base :&nbsp;
 
 Tout ces composants ne seront pas chez moi avant mars 2024 je vais donc passer quelque temps sur simulateur avant ;)
 
-
-
 ### Étape 3 : Passer les formations et du temps sur simulateur
 
 Pour bien maîtriser le pilotage d'un drone, il est essentiel d'être un bon pilote. C'est pourquoi je recommande aux débutants de commencer par s'entraîner sur un simulateur. Pour cela, vous aurez besoin d'une manette de jeu. Personnellement, j'utilise la TX12 de Radiomaster en ELRS, qui offre une excellente performance et une grande polyvalence.
@@ -250,8 +248,4 @@ nous avions besoin d'au moins 3 panneaux. À noter qu'après les tests, les impr
 maille sont la Prusa (Mini et MK4) ainsi que la Bambou, bien entendu.
 
 ![Image 1](https://fablab-fabriqueinnovation.fab-manager.com/uploads/project_step_image/12173/project_step_image.jpg)
-
-## Fichiers CAD
-
-![mailleouverte.stl](https://fablab-fabriqueinnovation.fab-manager.com/uploads/project_cao/12179/mailleouverte.stl)
 
